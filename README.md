@@ -44,15 +44,21 @@ Table 1 summarises the classes and packages and usage for the classes in this ap
 | VideoTest       | Input alphanumeric characters from another source          | java.util.Scanner          |
 | VideoStore      | Access an element in the ArrayList using the get method    | java.util.ArrayList        |
 
-Table 2 describes the fields, constructors and methods for each classes in the desktop application. 
+ 
+<h3>Class Summary</h3>   
+The class summaries below describe the fields, constructors and methods for each class in the desktop application. 
 
-<h3>[Table 2.]</h3>
+<h3>Customer</h3>
+The Customer class has instance fields for the customer’s name and for the number of video titles to be borrowed and loaned out. A method `borrowvideo(Video v)` checks video availability and borrowing limit, sets due date and on loan fields in Video. Provides get method for customer’s name.
+ 
+<h3>Video</h3>
+The Video class has instance fields for the video title, loan status, and return date. Provides get and set methods for some fields and a `toString()` method.        
 
-| Class      | Summary                                           
-| Customer   | The Customer class has instance fields for the customer’s name and for the number of video titles to be borrowed and loaned out. A method `borrowvideo(Video v)` checks video availability and borrowing limit, sets due date and on loan fields in Video. Provides get method for customer’s name. |
-| Video      | The Video class has instance fields for the video title, loan status, and return date. Provides get and set methods for some fields and a `toString()` method.                                                                 |
-| VideoStore | Contains ArrayLists for customers and videos respectively. Initializes Customer and Video objects, provides `listallvideos()` method, and `borrow(String,String)` method. Checks and identifies corresponding objects.       |
-| VideoTest  | The main method creates a new VideoStore and enters an infinite loop with a GUI menu. Options include listing all videos, borrowing, and quitting. Borrow option prompts for customer's name and video title.                |
+<h3>VideoStore</h3> 
+Contains ArrayLists for customers and videos respectively. Initializes Customer and Video objects, provides `listallvideos()` method, and `borrow(String,String)` method. Checks and identifies corresponding objects. 
+
+<h3>VideoTest</h3>
+The main method creates a new VideoStore and enters an infinite loop with a GUI menu. Options include listing all videos, borrowing, and quitting. Borrow option prompts for customer's name and video title.                |
 
 
 
