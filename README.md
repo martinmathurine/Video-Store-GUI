@@ -31,48 +31,41 @@ If I were to create this application the block diagram in Figure 2 would illustr
 <h3>[Figure 2.]</h3>
 <img src="https://github.com/martinmathurine/Video-Store-GUI/assets/42855193/a24d6ca7-8c95-4442-bd87-1f3013088846" width="500">
 
-<h3>Class Summary 1</h3>
+<h2>Class Summary 1</h2>
 Below Summarises the classes, packages and usage for the classes in this application. 
 
-Class: Customer, Video | Usage: Used for date/time formatting subclasses | Package: java.text.DateFormat.
+ - Class: Customer, Video | Usage: Used for date/time formatting subclasses | Package: java.text.DateFormat.
+ - Class: Customer, Video | Usage: Used for formatting and parsing dates | Package: java.text.SimpleDateFormat.
+ - Class: Customer | Usage: A method to converting between an instance in time and such as dd/mm/YYYY | Package: java.util.Calendar.
+ - Class: Customer, Video | Usage: Represents an instance in time | Package: java.util.Date.
+ - Class: VideoTest | Usage: An object to input alphanumeric characters from another source | Package: java.util.Scanner.
+ - Class: VideoStore | Usage: Access an element in the ArrayList using the get method | Package: java.util.ArrayList.
 
-Class: Customer, Video | Usage: Used for formatting and parsing dates | Package: java.text.SimpleDateFormat.
-
-Class: Customer | Usage: A method to converting between an instance in time and such as dd/mm/YYYY | Package: java.util.Calendar.
-
-Class: Customer, Video | Usage: Represents an instance in time | Package: java.util.Date.
-
-Class: VideoTest | Usage: An object to input alphanumeric characters from another source | Package: java.util.Scanner.
-
-Class: VideoStore | Usage: Access an element in the ArrayList using the get method | Package: java.util.ArrayList.
-
-<h3>Class Summary 2</h3>   
+<h2>Class Summary 2</h2>   
 The class summaries below describe the fields, constructors and methods for each class in the desktop application. 
 
-<h3>Customer</h3>
-The Customer class has instance fields for the customer’s name and for the number of video titles to be borrowed and loaned out. A method `borrowvideo(Video v)` checks video availability and borrowing limit, sets due date and on loan fields in Video. Provides get method for customer’s name.
+<b>Customer</b>
+ - The Customer class has instance fields for the customer’s name and for the number of video titles to be borrowed and loaned out. A method `borrowvideo(Video v)` checks video availability and borrowing limit, sets due date and on loan fields in Video. Provides get method for customer’s name.
  
-<h3>Video</h3>
-The Video class has instance fields for the video title, loan status, and return date. Provides get and set methods for some fields and a `toString()` method.        
+<b>Video</b>
+ - The Video class has instance fields for the video title, loan status, and return date. Provides get and set methods for some fields and a `toString()` method.        
 
-<h3>VideoStore</h3> 
-Contains ArrayLists for customers and videos respectively. Initializes Customer and Video objects, provides `listallvideos()` method, and `borrow(String,String)` method. Checks and identifies corresponding objects. 
+<b>VideoStore</b> 
+ - Contains ArrayLists for customers and videos respectively. Initializes Customer and Video objects, provides `listallvideos()` method, and `borrow(String,String)` method. Checks and identifies corresponding objects. 
 
-<h3>VideoTest</h3>
+<b>VideoTest</b>
 The main method creates a new VideoStore and enters an infinite loop with a GUI menu. Options include listing all videos, borrowing, and quitting. Borrow option prompts for customer's name and video title.             
 
-<h3>Class Summary 3</h3>
+<h2>Class Summary 3</h2>
 The class summary below describes the fields, constructors and methods for each of the classes in the program in further detail. 
 
 Class: Customer | Attributes: Customer (String name, int borrowdVideos), void setName(String name), String getName(), Void setBorrowedVideos(int borrowedVideos), int getBorrowedVideos(), void borrowVideo(Video v) | Usage: Customer name, Changes the name, Return the name, Changes borrowed videos, Return borrowed videos, Method to be called
 
-Class: Video | Attributes: Video(String title), void setTitle(String title), String getTitle(), void setLoaned(boolean loaned), boolean getLoaned(), void setDueDate(Date dueDate), Date getDueDate(), String toString() | Usage: Constructor. Customer’s loaned videos, Changes video title, Returns video title, Changes loaned titles due date, Boolean field, Removes due date, Returns the String representation of the object
+ - Class: Video | Attributes: Video(String title), void setTitle(String title), String getTitle(), void setLoaned(boolean loaned), boolean getLoaned(), void setDueDate(Date dueDate), Date getDueDate(), String toString() | Usage: Constructor. Customer’s loaned videos, Changes video title, Returns video title, Changes loaned titles due date, Boolean field, Removes due date, Returns the String representation of the object
+ - Class: VideoStore | Attributes: VideoStore(), void listallVideos(), void borrow(String customerName, String videoTitle) | Usage: Videos and customers records, Changes list for all available video titles, Changes list of video titles on loan
+ - Class: VideoTest | Attributes: void main(), listallVideos (), borrow (String) | Usage: Main method creates the VideoStore, Lists the videos available for loan, Gets the borrowed video.
 
-Class: VideoStore | Attributes: VideoStore(), void listallVideos(), void borrow(String customerName, String videoTitle) | Usage: Videos and customers records, Changes list for all available video titles, Changes list of video titles on loan
-
-Class: VideoTest | Attributes: void main(), listallVideos (), borrow (String) | Usage: Main method creates the VideoStore, Lists the videos available for loan, Gets the borrowed video.
-
-<h3>Implementation</h3>
+<h2>Implementation</h2>
 The source code was not entirely developed by myself; however, I have refactored parts of the code to illustrate my comprehension of the material. [3] I have written comments within the source code to show my understanding of what the application is doing line-by-line. The source code has been fully referenced. [4]  
  
 Java Source Code Printout: Customer Class  
