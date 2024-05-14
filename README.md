@@ -1,12 +1,8 @@
 # Video-Store-GUI
 
-<img src="
-" width="500">
-
-
 <h2>Abstract</h2> 
-The report illustrates how Java technology can be used to write an object-orientated application. The simple application is a video store used for keeping records of videos that were loaned out and borrowed by the store’s customers. The design requirements state that the program must be able to allow customers to list the available videos and borrow them respectively providing that it is available otherwise a prompt will appear to instruct the customer on the video’s expected return date. The program records whether a video title is available to be borrowed and loaned out and if it is on loan, the expected date it is due to be returned will be displayed. Each customer can borrow up to 2 video titles for a maximum period of 3 consecutive days. This report evaluates the application for its use case according to the design requirements set out in the design specification. 
- 
+The report illustrates how Java technology can be used to write an object-orientated application. The simple application is a video store used for keeping records of videos that were loaned out and borrowed by the store’s customers. The design requirements state that the program must be able to allow customers to list the available videos and borrow them respectively providing that it is available otherwise a prompt will appear to instruct the customer on the video’s expected return date. The program records whether a video title is available to be borrowed and loaned out and if it is on loan, the expected date it is due to be returned will be displayed. Each customer can borrow up to 2 video titles for a maximum period of 3 consecutive days. This report evaluates the application for its use case according to the design requirements set out in the design specification.
+
 *Keywords: Network Software Engineering, Java, Object-Oriented Programming (OOP), Operating Software (OS) Video Store Application.*
  
 <h2>Introduction</h2> 
@@ -67,35 +63,23 @@ The class summary below describes the fields, constructors and methods for each 
 <h2>Implementation</h2>
 The source code was not entirely developed by myself; however, I have refactored parts of the code to illustrate my comprehension of the material. [3] I have written comments within the source code to show my understanding of what the application is doing line-by-line. The source code has been fully referenced. [4]  
  
-Java Source Code Printout: Customer Class  
-<img src="https://github.com/martinmathurine/Video-Store-GUI/assets/42855193/dfbd9de5-c5f9-4100-af4a-741413228b14" width="500">
+<h3>Test Case Execution and Results</h3> 
+The testing approach employed for this application was manual testing, chosen for its ability to provide a comprehensive level of quality assurance, especially suited for end-user-focused applications. By manually testing, I could scrutinize the source code and adapt it to meet the design specifications effectively. Each test aimed to validate the key features of the desktop GUI application, ensuring functionality aligns with the user case requirements.. [5] 
+ 
+<b>Test Case 1</b> 
+In Test Case 1, the application was confirmed to be functioning as intended. Upon starting the program, a main menu prompts the user to input commands. Validating customer and film titles is crucial for loan transactions. The test revealed that loan requests from unrecognized customers, like Wolverine, and for unavailable film titles, like 'Spider-Man', were appropriately rejected. This verification process ensures only valid customers can successfully borrow titles listed in the application's system. Overall, Test Case 1 demonstrated successful validation (status = passed).
 
-Java Source Code Printout: Video Class  
-<img src="
-" width="500">
+<img src="https://github.com/martinmathurine/Video-Store-GUI/assets/42855193/76027f7a-fa12-4eea-9419-708e225b815d" width="500">
 
+<b>Test Case 2</b> 
+The end-user must enter, “L” to see available titles then enter, “B” in order to enter a valid customer name and a valid video title to borrow and loan out. This also tests the customer not to exceed the maximum loaned out titles and to display a loan period of no more than 3 days from the date of the initial loan. Also, to end the application once the limit has been exceeded by exiting by selecting, “Q” from the main menu. The result is as expected and the test has proved successful (status = passed). 
 
-<img src="
-" width="500">
+<img src="https://github.com/martinmathurine/Video-Store-GUI/assets/42855193/c7f02790-7c93-436c-9178-7aede9167f60" width="500">
 
+<b>Test Case 3</b>
+The test involves printing the list of video titles and borrowing a title by selecting "L" and "B" respectively. It ensures that once a title is loaned, it cannot be borrowed again. In the test, Bishop attempts to borrow the film "Logan" multiple times, resulting in a prompt indicating that the title is already loaned. This verifies that customers cannot borrow the same video twice and shows available titles for loan. Additionally, it confirms that the maximum loan limit of 2 videos per customer is enforced. The test outcome is successful (status = passed).
 
-<img src="
-" width="500">
+<img src="https://github.com/martinmathurine/Video-Store-GUI/assets/42855193/34e57f74-3e86-4104-b529-0f322544393c" width="500">
 
-
-<img src="
-" width="500">
-
-
-<img src="
-" width="500">
-
-
-<img src="
-" width="500">
-
-
-<img src="
-" width="500">
-
-
+<h3>Concluding Reflections</h3>
+In conclusion, the application effectively fulfills the user case outlined in the design specification, facilitating the recording and display of available video titles borrowed and loaned by customers of the video store. While I collaborated on the application and referenced external sources, I've also taken ownership by refactoring portions of the code and providing comprehensive comments to demonstrate my understanding of the Java source code. Through rigorous testing against predefined test cases, I've verified that the application functions as intended, adhering to the requirements of specification as outlined in the this lab. This process not only showcases my ability to work with existing codebases but also underscores my competency in software development practices and my commitment to delivering high-quality, reliable solutions. 
