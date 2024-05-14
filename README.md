@@ -59,8 +59,7 @@ The main method creates a new VideoStore and enters an infinite loop with a GUI 
 <h2>Class Summary 3</h2>
 The class summary below describes the fields, constructors and methods for each of the classes in the program in further detail. 
 
-Class: Customer | Attributes: Customer (String name, int borrowdVideos), void setName(String name), String getName(), Void setBorrowedVideos(int borrowedVideos), int getBorrowedVideos(), void borrowVideo(Video v) | Usage: Customer name, Changes the name, Return the name, Changes borrowed videos, Return borrowed videos, Method to be called
-
+ - Class: Customer | Attributes: Customer (String name, int borrowdVideos), void setName(String name), String getName(), Void setBorrowedVideos(int borrowedVideos), int getBorrowedVideos(), void borrowVideo(Video v) | Usage: Customer name, Changes the name, Return the name, Changes borrowed videos, Return borrowed videos, Method to be called
  - Class: Video | Attributes: Video(String title), void setTitle(String title), String getTitle(), void setLoaned(boolean loaned), boolean getLoaned(), void setDueDate(Date dueDate), Date getDueDate(), String toString() | Usage: Constructor. Customer’s loaned videos, Changes video title, Returns video title, Changes loaned titles due date, Boolean field, Removes due date, Returns the String representation of the object
  - Class: VideoStore | Attributes: VideoStore(), void listallVideos(), void borrow(String customerName, String videoTitle) | Usage: Videos and customers records, Changes list for all available video titles, Changes list of video titles on loan
  - Class: VideoTest | Attributes: void main(), listallVideos (), borrow (String) | Usage: Main method creates the VideoStore, Lists the videos available for loan, Gets the borrowed video.
