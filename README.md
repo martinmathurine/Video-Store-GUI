@@ -69,17 +69,17 @@ The testing approach employed for this application was manual testing, chosen fo
 <b>Test Case 1</b> 
 In Test Case 1, the application was confirmed to function as intended. Upon starting the program, a main menu prompts the user to input commands. Validating customer and film titles is crucial for loan transactions. The test revealed that loan requests from unrecognized customers, like Wolverine, and for unavailable film titles, like 'Spider-Man', were appropriately rejected. This verification process ensures only valid customers can successfully borrow titles listed in the application's system. Overall, Test Case 1 demonstrated successful validation (status = passed).
 
-<img src="https://github.com/martinmathurine/Video-Store-GUI/assets/42855193/76027f7a-fa12-4eea-9419-708e225b815d" width="500">
+<img width="500" alt="test 1" src="https://github.com/martinmathurine/Video-Store-GUI/assets/42855193/45f0a535-36a6-4528-a83e-e6324a610d52">
 
 <b>Test Case 2</b> 
 The end-user must enter, “L” to see available titles then enter, “B” in order to enter a valid customer name and a valid video title to borrow and loan out. This also tests the customer not to exceed the maximum loaned out titles and to display a loan period of no more than 3 days from the date of the initial loan. Also, to end the application once the limit has been exceeded by exiting by selecting, “Q” from the main menu. The result is as expected and the test has proved successful (status = passed). 
 
-<img src="https://github.com/martinmathurine/Video-Store-GUI/assets/42855193/c7f02790-7c93-436c-9178-7aede9167f60" width="500">
+<img width="500" alt="test 2" src="https://github.com/martinmathurine/Video-Store-GUI/assets/42855193/8b9d9fde-f857-429a-b2fc-ba141948b165">
 
 <b>Test Case 3</b>
 The test involves printing the list of video titles and borrowing a title by selecting "L" and "B" respectively. It ensures that once a title is loaned, it cannot be borrowed again. In the test, Bishop attempts to borrow the film "Logan" multiple times, resulting in a prompt indicating that the title is already loaned. This verifies that customers cannot borrow the same video twice and shows available titles for loan. Additionally, it confirms that the maximum loan limit of 2 videos per customer is enforced. The test outcome is successful (status = passed).
 
-<img src="https://github.com/martinmathurine/Video-Store-GUI/assets/42855193/34e57f74-3e86-4104-b529-0f322544393c" width="500">
+<img width="500" alt="test 3" src="https://github.com/martinmathurine/Video-Store-GUI/assets/42855193/0e8d8dc0-f80e-4cdb-8fed-7a0013ebe466">
 
 <h3>Concluding Reflections</h3>
 In conclusion, the application effectively fulfils the user case outlined in the design specification, facilitating the recording and display of available video titles borrowed and loaned by customers of the video store. While I collaborated on the application and referenced external sources, I've also taken ownership by refactoring portions of the code and providing comprehensive comments to demonstrate my understanding of the Java source code. Through rigorous testing against predefined test cases, I've verified that the application functions as intended, adhering to the requirements of specification as outlined in this lab. This process not only showcases my ability to work with existing codebases but also underscores my competency in software development practices and my commitment to delivering high-quality, reliable solutions. 
