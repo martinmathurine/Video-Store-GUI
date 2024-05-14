@@ -85,7 +85,7 @@ The test involves printing the list of video titles and borrowing a title by sel
 In conclusion, the application effectively fulfils the user case outlined in the design specification, facilitating the recording and display of available video titles borrowed and loaned by customers of the video store. While I collaborated on the application and referenced external sources, I've also taken ownership by refactoring portions of the code and providing comprehensive comments to demonstrate my understanding of the Java source code. Through rigorous testing against predefined test cases, I've verified that the application functions as intended, adhering to the requirements of specification as outlined in this lab. This process not only showcases my ability to work with existing codebases but also underscores my competency in software development practices and my commitment to delivering high-quality, reliable solutions. 
 
 <h3>References</h3>
-[1]	softwaretestinghelp.com, "What Is Java Used For: 12 Real World Java Applications", softwaretestinghelp.com, 2022. [Online]. Available: https://www.softwaretestinghelp.com/real-worldapplications-of-java/#1_Desktop_GUI_Applications. [Accessed: 15- Apr- 2022]. 
+[1]	softwaretestinghelp.com, "What Is Java Used For: 12 Real World Java Applications", softwaretestinghelp.com, 2022. [Online]. Available: https://www.softwaretestinghelp.com/real-worldapplications-of-java/#1_Desktop_GUI_Applications. [Accessed: 15- Apr- 2022].
 
 [2]	N. Schneidewind, Computer, network, software, and hardware engineering with applications. Hoboken, N.J.: Wiley, 2012, pp. 429-432. 
 
